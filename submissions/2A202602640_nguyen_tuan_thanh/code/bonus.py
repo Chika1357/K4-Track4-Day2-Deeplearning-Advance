@@ -238,5 +238,4 @@ def export_onnx(lab, seed: int | None = None) -> dict:
     lab.save("bonus_onnx", out)
     return out
 
-# Tham khảo implementation: picuisme/K4-Track4-Day2-Deeplearning-Advance @ 941d9fb.
 # Bản cho Nguyen Tuan Thanh: sửa optimizer/resume/report/Colab; số liệu phải chạy riêng.

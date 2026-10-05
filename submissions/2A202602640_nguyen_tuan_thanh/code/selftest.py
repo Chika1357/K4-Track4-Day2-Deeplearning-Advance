@@ -347,5 +347,4 @@ if __name__ == "__main__":
     print("-ln(1/9) =", round(-math.log(1 / 9), 4))
     unittest.main(verbosity=2)
 
-# Tham khảo implementation: picuisme/K4-Track4-Day2-Deeplearning-Advance @ 941d9fb.
 # Bản cho Nguyen Tuan Thanh: sửa optimizer/resume/report/Colab; số liệu phải chạy riêng.

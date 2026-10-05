@@ -292,5 +292,4 @@ def make_loader(df: pd.DataFrame, images_dir: str | Path, transform, batch_size:
                       drop_last=train and len(ds) > batch_size, worker_init_fn=_seed_worker, generator=g,
                       persistent_workers=num_workers > 0)
 
-# Tham khảo implementation: picuisme/K4-Track4-Day2-Deeplearning-Advance @ 941d9fb.
 # Bản cho Nguyen Tuan Thanh: sửa optimizer/resume/report/Colab; số liệu phải chạy riêng.

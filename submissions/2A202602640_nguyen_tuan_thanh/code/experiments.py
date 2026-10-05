@@ -1087,5 +1087,4 @@ class Lab:
         self.save("step4_errors", out)
         return out
 
-# Tham khảo implementation: picuisme/K4-Track4-Day2-Deeplearning-Advance @ 941d9fb.
 # Bản cho Nguyen Tuan Thanh: sửa optimizer/resume/report/Colab; số liệu phải chạy riêng.

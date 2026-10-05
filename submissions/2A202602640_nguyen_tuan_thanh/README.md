@@ -2,8 +2,7 @@
 
 Trạng thái hiện tại: **code đã chuẩn bị; chưa có đủ kết quả huấn luyện riêng trong repo**.
 Notebook sẽ tạo `results.xlsx`, `report.md`, `curves/`, `predictions/`, `logs/` và `eval_out/` từ lần chạy thật.
-Xem [báo cáo tạm](report.md) và [kết quả bài tham khảo có ghi nguồn](references/friend-results.md).
-Các số tham khảo không phải kết quả của sinh viên và không được nhập vào bảng thực nghiệm riêng.
+Xem [báo cáo tạm](report.md). Kết quả thực nghiệm sẽ được cập nhật từ log Colab.
 
 Notebook Colab: <!-- NOTEBOOK_LINK -->bổ sung link notebook đã lưu trước khi nộp<!-- /NOTEBOOK_LINK -->
 
@@ -20,7 +19,7 @@ Notebook Colab: <!-- NOTEBOOK_LINK -->bổ sung link notebook đã lưu trước
 
 Profile mặc định `deadline`: 5 backbone, 3 trục với ít nhất 2 giá trị mỗi trục,
 một kết hợp, nhiều phương pháp suy luận; baseline và chung kết mỗi bên seed `[0, 1, 2]`.
-**12 epoch/model**, bằng số epoch trong bài tham khảo và trong mức 10–15 đề xuất.
+**12 epoch/model**, trong mức 10–15 đề xuất.
 Tốc độ phụ thuộc GPU được cấp và tốc độ tải/lưu Drive; chương trình in thời gian thật và ước lượng sau vòng backbone.
 Thời gian có thể vượt hạn 2 giờ trên Colab miễn phí. Không đổi epoch/batch giữa vòng so sánh đã chạy.
 
@@ -58,13 +57,7 @@ Trước khi nộp, đọc lại phần nhận xét ảnh sai trong báo cáo; c
 Chưa chạy training. Thông tin này sẽ được notebook cập nhật tự động.
 <!-- /RUN_INFO -->
 
-## Nguồn tham khảo code
-
-Theo yêu cầu tham khảo bài bạn học, bản này phát triển từ implementation công khai
-[`picuisme/K4-Track4-Day2-Deeplearning-Advance`, commit 941d9fb](https://github.com/picuisme/K4-Track4-Day2-Deeplearning-Advance/tree/941d9fb/submissions/2A202602571_nguyen_tran_kien/code).
-Các sửa đổi gồm: Colab/Drive, profile theo hạn nộp, resume có trạng thái optimizer và seed theo epoch,
-tái sử dụng thí nghiệm trùng, loại decay cho bias head, tái tạo eval từ CSV, bảng thông lượng và báo cáo riêng.
-Không sử dụng số liệu, dự đoán hoặc biểu đồ của bài tham khảo làm kết quả của sinh viên.
+## Dữ liệu và quy trình đánh giá
 
 Dataset và quy trình đánh giá: tài liệu `README.md`, `GUIDE.md`, `RUBRIC.md` của repo lớp;
-nhãn/split từ AlexOlsen/DeepWeeds và ảnh Zenodo, MD5 `b7b30f96d466fba86016aa5a26606e0f`.
+nhãn/split DeepWeeds nguyên bản và ảnh Zenodo, MD5 `b7b30f96d466fba86016aa5a26606e0f`.

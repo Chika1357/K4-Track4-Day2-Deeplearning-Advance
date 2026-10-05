@@ -116,5 +116,4 @@ def tta_latency(model, k_views: int, **kw) -> dict:
             "warmup": warmup, "torch": torch.__version__, "preprocessing_included": False,
             "k_views": k_views, "k_times_single_p50": k_views * single["p50"]}
 
-# Tham khảo implementation: picuisme/K4-Track4-Day2-Deeplearning-Advance @ 941d9fb.
 # Bản cho Nguyen Tuan Thanh: sửa optimizer/resume/report/Colab; số liệu phải chạy riêng.

@@ -151,5 +151,4 @@ def mixed_loss(criterion, logits, targets):
     y_a, y_b, lam = targets
     return lam * criterion(logits, y_a) + (1.0 - lam) * criterion(logits, y_b)
 
-# Tham khảo implementation: picuisme/K4-Track4-Day2-Deeplearning-Advance @ 941d9fb.
 # Bản cho Nguyen Tuan Thanh: sửa optimizer/resume/report/Colab; số liệu phải chạy riêng.

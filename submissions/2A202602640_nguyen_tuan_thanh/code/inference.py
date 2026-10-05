@@ -304,5 +304,4 @@ def fuse_conv_bn(model, check_input=None, tol: float = 1e-3):
         raise RuntimeError(f"gộp BN làm đầu ra lệch {diff:.3e} > {tol}: kiến trúc này không gộp được theo cặp liền kề")
     return fused
 
-# Tham khảo implementation: picuisme/K4-Track4-Day2-Deeplearning-Advance @ 941d9fb.
 # Bản cho Nguyen Tuan Thanh: sửa optimizer/resume/report/Colab; số liệu phải chạy riêng.

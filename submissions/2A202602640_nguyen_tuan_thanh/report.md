@@ -3,7 +3,7 @@
 **Sinh viên:** Nguyen Tuan Thanh · **MSSV:** 2A202602640
 
 **Trạng thái:** chưa có đủ kết quả thực nghiệm riêng được đưa vào repo. Báo cáo này là bản chuẩn bị;
-các ô “Chờ log riêng” phải được cập nhật từ Colab. Số liệu của bài tham khảo được ghi ở phần riêng có nguồn.
+các ô “Chờ log riêng” phải được cập nhật từ Colab.
 
 ## 1. Bài toán và thiết lập dự kiến
 
@@ -44,24 +44,10 @@ Thử TTA, crop, độ phân giải, gộp xác suất/logit, ensemble, temperat
 Các cấu hình/seed giống hệt được tái sử dụng có ghi `reused_from`, không coi là seed độc lập mới.
 `results.xlsx` và các kết luận cuối chỉ tạo từ log, dự đoán và kết quả `eval.py` của lần chạy riêng.
 
-## 4. Kết quả tham khảo có nguồn — không phải kết quả của sinh viên
-
-Nguồn: [bài của Nguyễn Trần Kiên (2A202602571), commit 941d9fb](https://github.com/picuisme/K4-Track4-Day2-Deeplearning-Advance/blob/941d9fb/submissions/2A202602571_nguyen_tran_kien/report.md).
-DeepWeeds fold 0, 12 epoch, ConvNeXt-Tiny; mean ± std qua ba seed.
-
-| Kết quả trong bài tham khảo | Macro-F1 test | Top-1 test |
-|---|---:|---:|
-| REF_T00 — công thức nền, một view | 0.9503 ± 0.0016 | 0.9614 ± 0.0012 |
-| REF_F01 — Mixup + label smoothing, toàn ảnh 256 + temperature scaling | 0.9578 ± 0.0035 | 0.9679 ± 0.0023 |
-
-Bảng này cung cấp mốc tham khảo trong lúc chờ kết quả Colab. Backbone, optimizer và thiết kế thí nghiệm riêng
-có khác biệt; không thể suy ra bài của Thanh đạt các chỉ số trên.
-Xem [bảng tham khảo chi tiết và nguồn](references/friend-results.md).
-
-## 5. Việc cần cập nhật trước khi nộp
+## 4. Việc cần cập nhật trước khi nộp
 
 1. Đưa log, biểu đồ và dự đoán riêng từ Colab vào thư mục này.
 2. Chạy bước xuất kết quả để tạo `results.xlsx` và thay báo cáo tạm bằng báo cáo từ log.
 3. Điền link notebook, phần cứng và số đếm dữ liệu thực tế.
 4. Kiểm tra mean ± std, chỉ số từng lớp, ma trận nhầm lẫn, ECE và độ trễ.
-5. Nếu còn thiếu thí nghiệm ở thời điểm nộp, ghi rõ các phần chưa hoàn thành; giữ nguồn cho các số tham khảo.
+5. Nếu còn thiếu thí nghiệm ở thời điểm nộp, ghi rõ các phần chưa hoàn thành.

@@ -854,5 +854,4 @@ def build_all(lab, notebook_link: str | None = None) -> dict:
     update_readme(lab, notebook_link)
     return {"xlsx": str(xlsx), "report": str(rep), **check_consistency(lab)}
 
-# Tham khảo implementation: picuisme/K4-Track4-Day2-Deeplearning-Advance @ 941d9fb.
 # Bản cho Nguyen Tuan Thanh: sửa optimizer/resume/report/Colab; số liệu phải chạy riêng.

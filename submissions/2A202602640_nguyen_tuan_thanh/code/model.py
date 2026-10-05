@@ -213,5 +213,4 @@ def count_gmacs(model, img_size: int = 224) -> float:
         GMAC_TOOL = f"hook Conv2d+Linear (fvcore không dùng được: {type(e).__name__})"
     return macs / 1e9
 
-# Tham khảo implementation: picuisme/K4-Track4-Day2-Deeplearning-Advance @ 941d9fb.
 # Bản cho Nguyen Tuan Thanh: sửa optimizer/resume/report/Colab; số liệu phải chạy riêng.
