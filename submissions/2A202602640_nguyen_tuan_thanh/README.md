@@ -1,7 +1,9 @@
 # DeepWeeds — Nguyen Tuan Thanh — 2A202602640
 
-Trạng thái ban đầu: **code đã chuẩn bị; chưa có kết quả huấn luyện của sinh viên**.
+Trạng thái hiện tại: **code đã chuẩn bị; chưa có đủ kết quả huấn luyện riêng trong repo**.
 Notebook sẽ tạo `results.xlsx`, `report.md`, `curves/`, `predictions/`, `logs/` và `eval_out/` từ lần chạy thật.
+Xem [báo cáo tạm](report.md) và [kết quả bài tham khảo có ghi nguồn](references/friend-results.md).
+Các số tham khảo không phải kết quả của sinh viên và không được nhập vào bảng thực nghiệm riêng.
 
 Notebook Colab: <!-- NOTEBOOK_LINK -->bổ sung link notebook đã lưu trước khi nộp<!-- /NOTEBOOK_LINK -->
 
