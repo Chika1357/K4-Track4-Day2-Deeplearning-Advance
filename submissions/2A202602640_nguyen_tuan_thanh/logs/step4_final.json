@@ -1,0 +1,133 @@
+{
+  "per_seed": [
+    {
+      "seed": 0,
+      "T_offline": 0.5761959814573494,
+      "T_realtime": 0.6057101090679144,
+      "F01": {
+        "val_macro_f1": 0.9618272047436134,
+        "test_macro_f1": 0.9565511303771805,
+        "test_top1": 0.9660678642714571,
+        "test_ece": 0.008134288347666368,
+        "test_ece_uncal": 0.1102083080953566,
+        "val_ece": 0.0042628906987727385
+      },
+      "F02": {
+        "val_macro_f1": 0.9580530157046296,
+        "test_macro_f1": 0.9523281052206385,
+        "test_top1": 0.9617907043056744,
+        "test_ece": 0.009302931222229895,
+        "test_ece_uncal": 0.09777990537107734
+      },
+      "T00": {
+        "val_macro_f1": 0.9542229400161796,
+        "test_macro_f1": 0.9490498654329311,
+        "test_top1": 0.9609352723125179,
+        "test_ece": 0.009677415855453918
+      }
+    },
+    {
+      "seed": 1,
+      "T_offline": 0.5836317636655654,
+      "T_realtime": 0.6117531562256446,
+      "F01": {
+        "val_macro_f1": 0.9598221000662855,
+        "test_macro_f1": 0.9545237803002391,
+        "test_top1": 0.9649272882805817,
+        "test_ece": 0.009855074783233346,
+        "test_ece_uncal": 0.11395875114925297,
+        "val_ece": 0.00712720602748718
+      },
+      "F02": {
+        "val_macro_f1": 0.954786984938036,
+        "test_macro_f1": 0.9494443168512802,
+        "test_top1": 0.9589392643284859,
+        "test_ece": 0.011914135459556477,
+        "test_ece_uncal": 0.09772397544966524
+      },
+      "T00": {
+        "val_macro_f1": 0.9536869539045879,
+        "test_macro_f1": 0.9509974781050197,
+        "test_top1": 0.9615055603079555,
+        "test_ece": 0.009439103346861539
+      }
+    },
+    {
+      "seed": 2,
+      "T_offline": 0.5749463063405614,
+      "T_realtime": 0.60071617388189,
+      "F01": {
+        "val_macro_f1": 0.9616779251482881,
+        "test_macro_f1": 0.9511830473860334,
+        "test_top1": 0.9617907043056744,
+        "test_ece": 0.008826268880257494,
+        "test_ece_uncal": 0.10680431046163531,
+        "val_ece": 0.004650650306784362
+      },
+      "F02": {
+        "val_macro_f1": 0.9581013235331552,
+        "test_macro_f1": 0.9509628808145278,
+        "test_top1": 0.9600798403193613,
+        "test_ece": 0.009814691183187053,
+        "test_ece_uncal": 0.09784763968189691
+      },
+      "T00": {
+        "val_macro_f1": 0.9569670491337702,
+        "test_macro_f1": 0.9458435024743044,
+        "test_top1": 0.9583689763330482,
+        "test_ece": 0.012048992427084008
+      }
+    }
+  ],
+  "inference": {
+    "model": "F01 seed 0",
+    "offline_method": "I04b",
+    "offline_desc": "Độ phân giải kiểm tra 256 (resize toàn ảnh, 1 view)",
+    "offline_views": [
+      "full256"
+    ],
+    "offline_space": "prob",
+    "offline_k": 1,
+    "offline_val_macro_f1": 0.9618272047436134,
+    "offline_delta_vs_i00": 0.003774189038983744,
+    "offline_flips_vs_i00": {
+      "wrong_to_right": 31,
+      "right_to_wrong": 21
+    },
+    "offline_p95_ms": 2.7424568019341677,
+    "realtime_config": "I00 1 view 224 FP32 batch 1",
+    "realtime_p50_ms": 1.9219250534661114,
+    "realtime_p95_ms": 1.9496409979183227,
+    "realtime_p99_ms": 2.0490517129655923,
+    "realtime_ok": true,
+    "i00_p95_ms": 1.9496409979183227,
+    "calibration_i00": {
+      "T": 0.6057101090679144,
+      "ece_before": 0.10141679697828969,
+      "ece_after_insample": 0.004495817083681258,
+      "ece_crossfit_before": 0.10198010129742477,
+      "ece_crossfit_after": 0.008940222970620618
+    },
+    "fuse": {
+      "has_batchnorm": false
+    },
+    "i00_matches_training_time_val_probs_max_abs_diff": 0.005196891843009532,
+    "latency_conditions": {
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "torch": "2.14.0+cu130",
+      "warmup": 10,
+      "iters": 50,
+      "preprocessing_included": false,
+      "input": "tensor ngẫu nhiên đã nằm trên thiết bị"
+    },
+    "rule": "ngoại tuyến: macro-F1 val cao nhất trong các phương pháp một-mô-hình (I00-I04) + temperature scaling; thời gian thực: 1 view, biến thể dtype/gộp BN có p95 batch-1 thấp nhất"
+  },
+  "eval_text": {
+    "score_F01": "### F01 (3 seed: [0, 1, 2]; 3507 ảnh)\n\n| Chỉ số | mean ± std |\n|---|---|\n| top-1 accuracy | 0.9643 ± 0.0022 |\n| macro-F1 | 0.9541 ± 0.0027 |\n| balanced accuracy | 0.9572 ± 0.0038 |\n| ECE (15 bin) | 0.0089 ± 0.0009 |\n| NLL | 0.1153 ± 0.0021 |\n\n| Lớp | Precision | Recall | F1 | Số ảnh |\n|---|---|---|---|---|\n| Chinee apple | 0.943 ± 0.017 | 0.901 ± 0.009 | 0.922 ± 0.009 | 226 |\n| Lantana | 0.938 ± 0.014 | 0.970 ± 0.005 | 0.954 ± 0.006 | 213 |\n| Parkinsonia | 0.951 ± 0.005 | 0.976 ± 0.010 | 0.963 ± 0.006 | 207 |\n| Parthenium | 0.985 ± 0.010 | 0.946 ± 0.005 | 0.965 ± 0.004 | 205 |\n| Prickly acacia | 0.918 ± 0.022 | 0.964 ± 0.007 | 0.941 ± 0.008 | 213 |\n| Rubber vine | 0.962 ± 0.005 | 0.957 ± 0.008 | 0.959 ± 0.002 | 202 |\n| Siam weed | 0.971 ± 0.007 | 0.983 ± 0.012 | 0.977 ± 0.009 | 215 |\n| Snake weed | 0.915 ± 0.004 | 0.944 ± 0.016 | 0.929 ± 0.008 | 204 |\n| Negative | 0.980 ± 0.005 | 0.973 ± 0.004 | 0.977 ± 0.002 | 1822 |\n\nĐã lưu kết quả vào /home/research02/research777/output/rtx6000_epochs12_v1/2A202602640_nguyen_tuan_thanh/eval_out/F01_*\n",
+    "score_F01_uncal": "### F01_uncal (3 seed: [0, 1, 2]; 3507 ảnh)\n\n| Chỉ số | mean ± std |\n|---|---|\n| top-1 accuracy | 0.9643 ± 0.0022 |\n| macro-F1 | 0.9541 ± 0.0027 |\n| balanced accuracy | 0.9572 ± 0.0038 |\n| ECE (15 bin) | 0.1103 ± 0.0036 |\n| NLL | 0.2129 ± 0.0024 |\n\n| Lớp | Precision | Recall | F1 | Số ảnh |\n|---|---|---|---|---|\n| Chinee apple | 0.943 ± 0.017 | 0.901 ± 0.009 | 0.922 ± 0.009 | 226 |\n| Lantana | 0.938 ± 0.014 | 0.970 ± 0.005 | 0.954 ± 0.006 | 213 |\n| Parkinsonia | 0.951 ± 0.005 | 0.976 ± 0.010 | 0.963 ± 0.006 | 207 |\n| Parthenium | 0.985 ± 0.010 | 0.946 ± 0.005 | 0.965 ± 0.004 | 205 |\n| Prickly acacia | 0.918 ± 0.022 | 0.964 ± 0.007 | 0.941 ± 0.008 | 213 |\n| Rubber vine | 0.962 ± 0.005 | 0.957 ± 0.008 | 0.959 ± 0.002 | 202 |\n| Siam weed | 0.971 ± 0.007 | 0.983 ± 0.012 | 0.977 ± 0.009 | 215 |\n| Snake weed | 0.915 ± 0.004 | 0.944 ± 0.016 | 0.929 ± 0.008 | 204 |\n| Negative | 0.980 ± 0.005 | 0.973 ± 0.004 | 0.977 ± 0.002 | 1822 |\n\nĐã lưu kết quả vào /home/research02/research777/output/rtx6000_epochs12_v1/2A202602640_nguyen_tuan_thanh/eval_out/F01_uncal_*\n",
+    "score_F02": "### F02 (3 seed: [0, 1, 2]; 3507 ảnh)\n\n| Chỉ số | mean ± std |\n|---|---|\n| top-1 accuracy | 0.9603 ± 0.0014 |\n| macro-F1 | 0.9509 ± 0.0014 |\n| balanced accuracy | 0.9586 ± 0.0008 |\n| ECE (15 bin) | 0.0103 ± 0.0014 |\n| NLL | 0.1304 ± 0.0014 |\n\n| Lớp | Precision | Recall | F1 | Số ảnh |\n|---|---|---|---|---|\n| Chinee apple | 0.939 ± 0.021 | 0.901 ± 0.009 | 0.920 ± 0.008 | 226 |\n| Lantana | 0.922 ± 0.028 | 0.977 ± 0.005 | 0.948 ± 0.013 | 213 |\n| Parkinsonia | 0.937 ± 0.015 | 0.979 ± 0.007 | 0.958 ± 0.004 | 207 |\n| Parthenium | 0.980 ± 0.015 | 0.953 ± 0.007 | 0.966 ± 0.011 | 205 |\n| Prickly acacia | 0.921 ± 0.006 | 0.964 ± 0.003 | 0.942 ± 0.003 | 213 |\n| Rubber vine | 0.943 ± 0.007 | 0.964 ± 0.003 | 0.953 ± 0.005 | 202 |\n| Siam weed | 0.972 ± 0.005 | 0.986 ± 0.005 | 0.979 ± 0.005 | 215 |\n| Snake weed | 0.900 ± 0.015 | 0.941 ± 0.020 | 0.920 ± 0.004 | 204 |\n| Negative | 0.981 ± 0.002 | 0.963 ± 0.004 | 0.972 ± 0.002 | 1822 |\n\nĐã lưu kết quả vào /home/research02/research777/output/rtx6000_epochs12_v1/2A202602640_nguyen_tuan_thanh/eval_out/F02_*\n",
+    "score_T00": "### T00 (3 seed: [0, 1, 2]; 3507 ảnh)\n\n| Chỉ số | mean ± std |\n|---|---|\n| top-1 accuracy | 0.9603 ± 0.0017 |\n| macro-F1 | 0.9486 ± 0.0026 |\n| balanced accuracy | 0.9521 ± 0.0022 |\n| ECE (15 bin) | 0.0104 ± 0.0014 |\n| NLL | 0.1228 ± 0.0059 |\n\n| Lớp | Precision | Recall | F1 | Số ảnh |\n|---|---|---|---|---|\n| Chinee apple | 0.945 ± 0.015 | 0.879 ± 0.009 | 0.911 ± 0.008 | 226 |\n| Lantana | 0.917 ± 0.014 | 0.981 ± 0.005 | 0.948 ± 0.005 | 213 |\n| Parkinsonia | 0.949 ± 0.023 | 0.968 ± 0.017 | 0.958 ± 0.007 | 207 |\n| Parthenium | 0.980 ± 0.013 | 0.940 ± 0.020 | 0.959 ± 0.006 | 205 |\n| Prickly acacia | 0.900 ± 0.006 | 0.959 ± 0.005 | 0.929 ± 0.001 | 213 |\n| Rubber vine | 0.963 ± 0.005 | 0.950 ± 0.005 | 0.957 ± 0.001 | 202 |\n| Siam weed | 0.969 ± 0.007 | 0.983 ± 0.007 | 0.976 ± 0.001 | 215 |\n| Snake weed | 0.915 ± 0.027 | 0.938 ± 0.003 | 0.926 ± 0.012 | 204 |\n| Negative | 0.978 ± 0.002 | 0.970 ± 0.001 | 0.974 ± 0.001 | 1822 |\n\nĐã lưu kết quả vào /home/research02/research777/output/rtx6000_epochs12_v1/2A202602640_nguyen_tuan_thanh/eval_out/T00_*\n",
+    "grade_F01_vs_T00": "## Tự chấm RUBRIC mục I (đề xuất; giảng viên xác nhận)\n\n| Mã | Tiêu chí | Điểm | Tối đa | Chi tiết |\n|---|---|---|---|---|\n| I1 | Top-1 accuracy test | 7 | 7 | 96.43% (mean 3 seed) |\n| I2 | Macro-F1 cải thiện so với mốc | 4 | 5 | final 0.9541, mốc 0.9486, Δ=+0.0055, s=0.0027 |\n| I3 | Recall hai lớp khó | 4 | 4 | Chinee Apple 90.1% (mốc 88.5%), Snake Weed 94.4% (mốc 88.8%) |\n| I4a | ECE sau TS < ECE trước | 1 | 1 | trước 0.1103, sau 0.0089 |\n| I4b | Chênh macro-F1 val/test <= 0.02 | 1 | 1 | val 0.9611, test 0.9541, chênh 0.0070 |\n| I5 | Cấu hình thời gian thực | 2 | 2 | p95 = 1.9 ms (ngân sách 100 ms), đo đúng cách |\n\n**Tổng các ý đã chấm: 19 / 20** (phần I tối đa 20).\n\nNgưỡng điểm là TẠM THỜI (xem khối hằng số đầu file eval.py và RUBRIC.md mục I).\n"
+  },
+  "note": "test chạy một lần mỗi seed; F01 và F02 dùng chung một lượt forward trên test (F02 = view center, FP32, không gộp BN; p95 truyền cho eval.py grade là của đúng cấu hình này: I00 FP32 batch 1)"
+}

@@ -1,0 +1,39 @@
+{
+  "ln9": 2.1972245773362196,
+  "seed_same_files": true,
+  "seed_same_tensors": true,
+  "other_seed_differs": true,
+  "initial_loss": {
+    "resnet18.tv_in1k": 2.0543394684791565,
+    "resnext50_32x4d.tv_in1k": 2.290832221508026,
+    "convnext_tiny.fb_in1k": 2.176650047302246,
+    "deit_tiny_patch16_224.fb_in1k": 2.236378490924835,
+    "mobilenetv3_small_100.lamb_in1k": 2.1826266646385193
+  },
+  "overfit": {
+    "backbone": "resnet50.tv_in1k",
+    "n_images": 16,
+    "steps": 6,
+    "first_loss": 2.206495761871338,
+    "final_loss": 0.003112096805125475,
+    "final_acc_eval_mode": 1.0,
+    "curve": [
+      2.206495761871338,
+      2.1167960166931152,
+      0.4935705065727234,
+      0.3775691092014313,
+      0.010109716095030308,
+      0.003112096805125475
+    ]
+  },
+  "mode_check": {
+    "has_batchnorm": true,
+    "eval_batch_dependence": 0.0007004737854003906,
+    "train_batch_dependence": 16.692577362060547,
+    "frozen_bn_layers_in_train_mode": 0
+  },
+  "mix_lams": {
+    "cutmix": 0.43893494897959184,
+    "mixup": 0.34823593497276306
+  }
+}

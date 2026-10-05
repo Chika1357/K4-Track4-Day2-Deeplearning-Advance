@@ -1,0 +1,84 @@
+{
+  "epochs": 12,
+  "batch_size": 64,
+  "num_workers": 2,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "backbones": [
+    [
+      "B01",
+      "resnet18.tv_in1k",
+      "resnet18",
+      "ResNet"
+    ],
+    [
+      "B02",
+      "resnext50_32x4d.tv_in1k",
+      "resnext50",
+      "ResNeXt"
+    ],
+    [
+      "B03",
+      "convnext_tiny.fb_in1k",
+      "convnext_tiny",
+      "ConvNeXt"
+    ],
+    [
+      "B04",
+      "deit_tiny_patch16_224.fb_in1k",
+      "deit_tiny",
+      "Transformer (DeiT)"
+    ],
+    [
+      "B05",
+      "mobilenetv3_small_100.lamb_in1k",
+      "mobilenetv3_small",
+      "Mạng nhẹ"
+    ]
+  ],
+  "ablations": [
+    [
+      "T01",
+      "A",
+      "frozen",
+      {
+        "init": "frozen"
+      }
+    ],
+    [
+      "T02",
+      "B",
+      "cutmix",
+      {
+        "mix": "cutmix",
+        "mix_alpha": 1.0
+      }
+    ],
+    [
+      "T03",
+      "C",
+      "labelsmooth",
+      {
+        "loss": "ls",
+        "label_smoothing": 0.1
+      }
+    ]
+  ],
+  "dinov2": null,
+  "chosen_backbone": null,
+  "near_best_tol": 0.005,
+  "parallel": false,
+  "bench_warmup": 10,
+  "bench_iters": 50,
+  "res_sweep": [
+    224,
+    256
+  ],
+  "sanity_backbone": "resnet50.tv_in1k",
+  "overfit_steps": 100,
+  "realtime_budget_ms": 100.0,
+  "profile": "deadline"
+}

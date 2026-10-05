@@ -1,0 +1,112 @@
+{
+  "n": {
+    "train": 10501,
+    "val": 3501,
+    "test": 3507
+  },
+  "total": 17509,
+  "frac": {
+    "train": 0.5997,
+    "val": 0.2,
+    "test": 0.2003
+  },
+  "per_class": {
+    "train": [
+      675,
+      637,
+      618,
+      613,
+      637,
+      605,
+      644,
+      609,
+      5463
+    ],
+    "val": [
+      225,
+      213,
+      206,
+      204,
+      212,
+      202,
+      215,
+      203,
+      1821
+    ],
+    "test": [
+      226,
+      213,
+      207,
+      205,
+      213,
+      202,
+      215,
+      204,
+      1822
+    ]
+  },
+  "class_total": [
+    1126,
+    1063,
+    1031,
+    1022,
+    1062,
+    1009,
+    1074,
+    1016,
+    9106
+  ],
+  "class_names": [
+    "Chinee Apple",
+    "Lantana",
+    "Parkinsonia",
+    "Parthenium",
+    "Prickly Acacia",
+    "Rubber Vine",
+    "Siam Weed",
+    "Snake Weed",
+    "Negatives"
+  ],
+  "overlap": {
+    "train∩val": 0,
+    "train∩test": 0,
+    "val∩test": 0
+  },
+  "union": 17509,
+  "missing_files": 0,
+  "imbalance_ratio": 9.024777006937562,
+  "n_images_on_disk": 17509,
+  "paper_table1": [
+    1125,
+    1064,
+    1031,
+    1022,
+    1062,
+    1009,
+    1074,
+    1016,
+    9106
+  ],
+  "matches_paper_table1": false,
+  "label_mismatch_vs_labels_csv": [
+    {
+      "split": "train",
+      "Filename": "20170714-110407-3.jpg",
+      "label_in_fold_csv": 0,
+      "label_in_labels_csv": 1
+    }
+  ],
+  "image_formats": {
+    "256x256 RGB": 17509
+  },
+  "train_channel_mean": [
+    0.3395,
+    0.3505,
+    0.3426
+  ],
+  "train_channel_std": [
+    0.2271,
+    0.2266,
+    0.2244
+  ]
+}

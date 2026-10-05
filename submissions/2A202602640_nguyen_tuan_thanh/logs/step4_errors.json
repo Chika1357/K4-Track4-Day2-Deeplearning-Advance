@@ -1,0 +1,214 @@
+{
+  "T00_top_confusions": [
+    {
+      "true": "Chinee Apple",
+      "pred": "Negatives",
+      "count_sum_seeds": 42,
+      "pct_of_true_class": 6.1946902654867255
+    },
+    {
+      "true": "Negatives",
+      "pred": "Lantana",
+      "count_sum_seeds": 38,
+      "pct_of_true_class": 0.6952067325283571
+    },
+    {
+      "true": "Negatives",
+      "pred": "Prickly Acacia",
+      "count_sum_seeds": 36,
+      "pct_of_true_class": 0.6586169045005488
+    },
+    {
+      "true": "Chinee Apple",
+      "pred": "Snake Weed",
+      "count_sum_seeds": 26,
+      "pct_of_true_class": 3.8348082595870205
+    },
+    {
+      "true": "Rubber Vine",
+      "pred": "Negatives",
+      "count_sum_seeds": 25,
+      "pct_of_true_class": 4.125412541254125
+    },
+    {
+      "true": "Snake Weed",
+      "pred": "Negatives",
+      "count_sum_seeds": 23,
+      "pct_of_true_class": 3.758169934640523
+    },
+    {
+      "true": "Negatives",
+      "pred": "Siam Weed",
+      "count_sum_seeds": 20,
+      "pct_of_true_class": 0.3658982802780827
+    },
+    {
+      "true": "Negatives",
+      "pred": "Rubber Vine",
+      "count_sum_seeds": 18,
+      "pct_of_true_class": 0.3293084522502744
+    }
+  ],
+  "F01_top_confusions": [
+    {
+      "true": "Negatives",
+      "pred": "Lantana",
+      "count_sum_seeds": 31,
+      "pct_of_true_class": 0.5671423344310281
+    },
+    {
+      "true": "Chinee Apple",
+      "pred": "Snake Weed",
+      "count_sum_seeds": 31,
+      "pct_of_true_class": 4.572271386430678
+    },
+    {
+      "true": "Negatives",
+      "pred": "Prickly Acacia",
+      "count_sum_seeds": 29,
+      "pct_of_true_class": 0.5305525064032199
+    },
+    {
+      "true": "Chinee Apple",
+      "pred": "Negatives",
+      "count_sum_seeds": 28,
+      "pct_of_true_class": 4.129793510324483
+    },
+    {
+      "true": "Rubber Vine",
+      "pred": "Negatives",
+      "count_sum_seeds": 26,
+      "pct_of_true_class": 4.29042904290429
+    },
+    {
+      "true": "Snake Weed",
+      "pred": "Negatives",
+      "count_sum_seeds": 25,
+      "pct_of_true_class": 4.084967320261438
+    },
+    {
+      "true": "Negatives",
+      "pred": "Parkinsonia",
+      "count_sum_seeds": 20,
+      "pct_of_true_class": 0.3658982802780827
+    },
+    {
+      "true": "Negatives",
+      "pred": "Rubber Vine",
+      "count_sum_seeds": 19,
+      "pct_of_true_class": 0.34760336626417854
+    }
+  ],
+  "n_wrong_seed": 119,
+  "n_chinee_snake_confusions_seed": 10,
+  "misclassified_shown": [
+    {
+      "Filename": "20170718-101439-2.jpg",
+      "y_true": 0,
+      "y_pred": 7,
+      "conf": 0.96910979
+    },
+    {
+      "Filename": "20170811-133725-1.jpg",
+      "y_true": 0,
+      "y_pred": 7,
+      "conf": 0.9395779
+    },
+    {
+      "Filename": "20170718-101313-2.jpg",
+      "y_true": 0,
+      "y_pred": 7,
+      "conf": 0.90249359
+    },
+    {
+      "Filename": "20170705-162506-0.jpg",
+      "y_true": 7,
+      "y_pred": 0,
+      "conf": 0.86130052
+    },
+    {
+      "Filename": "20170705-162907-0.jpg",
+      "y_true": 0,
+      "y_pred": 7,
+      "conf": 0.67170024
+    },
+    {
+      "Filename": "20170410-124301-0.jpg",
+      "y_true": 0,
+      "y_pred": 7,
+      "conf": 0.66076487
+    },
+    {
+      "Filename": "20170210-133739-0.jpg",
+      "y_true": 0,
+      "y_pred": 7,
+      "conf": 0.65224567
+    },
+    {
+      "Filename": "20170405-160251-0.jpg",
+      "y_true": 0,
+      "y_pred": 7,
+      "conf": 0.62620587
+    },
+    {
+      "Filename": "20170304-132652-0.jpg",
+      "y_true": 7,
+      "y_pred": 0,
+      "conf": 0.61247238
+    },
+    {
+      "Filename": "20170803-132744-1.jpg",
+      "y_true": 0,
+      "y_pred": 7,
+      "conf": 0.49569811
+    },
+    {
+      "Filename": "20170405-160310-0.jpg",
+      "y_true": 8,
+      "y_pred": 0,
+      "conf": 0.9950447
+    },
+    {
+      "Filename": "20171102-094714-3.jpg",
+      "y_true": 4,
+      "y_pred": 8,
+      "conf": 0.9940636
+    },
+    {
+      "Filename": "20171113-101506-1.jpg",
+      "y_true": 5,
+      "y_pred": 8,
+      "conf": 0.99365921
+    },
+    {
+      "Filename": "20170727-152712-1.jpg",
+      "y_true": 8,
+      "y_pred": 4,
+      "conf": 0.99239732
+    },
+    {
+      "Filename": "20170729-091822-2.jpg",
+      "y_true": 8,
+      "y_pred": 4,
+      "conf": 0.99208339
+    },
+    {
+      "Filename": "20170521-153505-0.jpg",
+      "y_true": 1,
+      "y_pred": 7,
+      "conf": 0.99088229
+    },
+    {
+      "Filename": "20171102-123002-2.jpg",
+      "y_true": 2,
+      "y_pred": 0,
+      "conf": 0.98921774
+    },
+    {
+      "Filename": "20171113-060629-1.jpg",
+      "y_true": 5,
+      "y_pred": 8,
+      "conf": 0.98783798
+    }
+  ]
+}

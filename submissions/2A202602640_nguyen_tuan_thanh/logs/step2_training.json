@@ -1,0 +1,176 @@
+{
+  "rows": [
+    {
+      "exp_id": "T00",
+      "backbone": "convnext_tiny.fb_in1k",
+      "axis": "-",
+      "axis_name": "nền",
+      "diff": "công thức nền T00",
+      "overrides": {},
+      "seed": 0,
+      "best_epoch": 12,
+      "val_macro_f1": 0.9542229400161796,
+      "val_top1": 0.964581548129106,
+      "delta_vs_t00": 0.0,
+      "f1_chinee_apple": 0.9237668161434978,
+      "f1_snake_weed": 0.9090909090909091,
+      "f1_min_weed": 0.9090909090909091,
+      "f1_negatives": 0.9773480662983426,
+      "curve": "T00_baseline.png",
+      "note": "seed 0"
+    },
+    {
+      "exp_id": "T00",
+      "backbone": "convnext_tiny.fb_in1k",
+      "axis": "-",
+      "axis_name": "nền",
+      "diff": "công thức nền T00",
+      "overrides": {},
+      "seed": 1,
+      "best_epoch": 11,
+      "val_macro_f1": 0.9536869539045879,
+      "val_top1": 0.9654384461582405,
+      "delta_vs_t00": -0.0005359861115916686,
+      "f1_chinee_apple": 0.9006928406466512,
+      "f1_snake_weed": 0.9041769041769041,
+      "f1_min_weed": 0.9006928406466512,
+      "f1_negatives": 0.9796703296703297,
+      "curve": "T00_baseline_seed1.png",
+      "note": "seed 1"
+    },
+    {
+      "exp_id": "T00",
+      "backbone": "convnext_tiny.fb_in1k",
+      "axis": "-",
+      "axis_name": "nền",
+      "diff": "công thức nền T00",
+      "overrides": {},
+      "seed": 2,
+      "best_epoch": 11,
+      "val_macro_f1": 0.9569670491337702,
+      "val_top1": 0.9674378748928878,
+      "delta_vs_t00": 0.0027441091175905985,
+      "f1_chinee_apple": 0.9213483146067416,
+      "f1_snake_weed": 0.9068627450980392,
+      "f1_min_weed": 0.9068627450980392,
+      "f1_negatives": 0.9801980198019802,
+      "curve": "T00_baseline_seed2.png",
+      "note": "seed 2"
+    },
+    {
+      "exp_id": "T01",
+      "backbone": "convnext_tiny.fb_in1k",
+      "axis": "A",
+      "axis_name": "A. Khởi tạo",
+      "diff": "init=frozen",
+      "overrides": {
+        "init": "frozen"
+      },
+      "seed": 0,
+      "best_epoch": 11,
+      "val_macro_f1": 0.6828030050740665,
+      "val_top1": 0.7646386746643816,
+      "delta_vs_t00": -0.27141993494211303,
+      "f1_chinee_apple": 0.6166219839142091,
+      "f1_snake_weed": 0.6138613861386139,
+      "f1_min_weed": 0.3798449612403101,
+      "f1_negatives": 0.8282828282828282,
+      "curve": "T01_frozen.png",
+      "note": ""
+    },
+    {
+      "exp_id": "T02",
+      "backbone": "convnext_tiny.fb_in1k",
+      "axis": "B",
+      "axis_name": "B. Augmentation",
+      "diff": "mix=cutmix, mix_alpha=1.0",
+      "overrides": {
+        "mix": "cutmix",
+        "mix_alpha": 1.0
+      },
+      "seed": 0,
+      "best_epoch": 12,
+      "val_macro_f1": 0.9571238671266276,
+      "val_top1": 0.9665809768637532,
+      "delta_vs_t00": 0.0029009271104479817,
+      "f1_chinee_apple": 0.9234234234234234,
+      "f1_snake_weed": 0.9060240963855422,
+      "f1_min_weed": 0.9060240963855422,
+      "f1_negatives": 0.978206896551724,
+      "curve": "T02_cutmix.png",
+      "note": ""
+    },
+    {
+      "exp_id": "T03",
+      "backbone": "convnext_tiny.fb_in1k",
+      "axis": "C",
+      "axis_name": "C. Hàm loss",
+      "diff": "loss=ls, label_smoothing=0.1",
+      "overrides": {
+        "loss": "ls",
+        "label_smoothing": 0.1
+      },
+      "seed": 0,
+      "best_epoch": 12,
+      "val_macro_f1": 0.9549965136661448,
+      "val_top1": 0.9660097115109969,
+      "delta_vs_t00": 0.0007735736499652202,
+      "f1_chinee_apple": 0.9251700680272109,
+      "f1_snake_weed": 0.9064039408866994,
+      "f1_min_weed": 0.9064039408866994,
+      "f1_negatives": 0.9793559042113955,
+      "curve": "T03_labelsmooth.png",
+      "note": ""
+    },
+    {
+      "exp_id": "T04",
+      "backbone": "convnext_tiny.fb_in1k",
+      "axis": "+",
+      "axis_name": "kết hợp",
+      "diff": "T02 + T03",
+      "overrides": {
+        "mix": "cutmix",
+        "mix_alpha": 1.0,
+        "loss": "ls",
+        "label_smoothing": 0.1
+      },
+      "seed": 0,
+      "best_epoch": 10,
+      "val_macro_f1": 0.9577747609020748,
+      "val_top1": 0.9668666095401314,
+      "delta_vs_t00": 0.0035518208858952294,
+      "f1_chinee_apple": 0.9271523178807947,
+      "f1_snake_weed": 0.9108433734939759,
+      "f1_min_weed": 0.9108433734939759,
+      "f1_negatives": 0.9781345142540824,
+      "curve": "T04_combo_cutmix+labelsmooth.png",
+      "note": "greedy: tốt nhất mỗi trục (Δ>0); tổng Δ của từng yếu tố = +0.0037",
+      "sum_of_single_deltas": 0.003674500760413202
+    }
+  ],
+  "choice": {
+    "backbone": "convnext_tiny.fb_in1k",
+    "noise_std_t00": 0.0017595662663266044,
+    "t00_val_macro_f1": [
+      0.9542229400161796,
+      0.9536869539045879,
+      0.9569670491337702
+    ],
+    "t00_mean": 0.9549589810181792,
+    "final_recipe_exp_id": "T04",
+    "final_overrides": {
+      "mix": "cutmix",
+      "mix_alpha": 1.0,
+      "loss": "ls",
+      "label_smoothing": 0.1
+    },
+    "final_val_macro_f1_seed0": 0.9577747609020748,
+    "final_delta_vs_t00": 0.0035518208858952294,
+    "best_per_axis": {
+      "A": "T01",
+      "B": "T02",
+      "C": "T03"
+    },
+    "rule": "macro-F1 val (seed 0) cao nhất trong {T00, từng yếu tố, kết hợp}; kết hợp = tốt nhất mỗi trục có Δ>0 (tham lam theo trục, song song trên cùng nền T00)"
+  }
+}
