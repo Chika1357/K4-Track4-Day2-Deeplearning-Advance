@@ -220,7 +220,7 @@ Cặp Chinee Apple ↔ Snake Weed: Chinee Apple → Snake Weed 4.6% (trích dẫ
 
 ## 9. Phụ lục
 
-- Notebook có output RTX 6000 Ada: [mở trên Colab](https://colab.research.google.com/github/Chika1357/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/2A202602640_nguyen_tuan_thanh/code/lab_day2_rtx6000_ada_executed.ipynb).
+- Notebook có output RTX 6000 Ada: [mở trên Colab](https://colab.research.google.com/github/Chika1357/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/2A202602640_nguyen_tuan_thanh/code/lab_day2.ipynb).
 - Notebook chạy lại trên Colab: [mở bản cấu hình Drive](https://colab.research.google.com/github/Chika1357/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/2A202602640_nguyen_tuan_thanh/code/lab_day2_colab.ipynb); hướng dẫn môi trường và đường dẫn ở `README.md`.
 - Kiểm tra số liệu sau khi chạy: xem `verification.md`; chỉ tính lại từ CSV, không forward test thêm.
 - Tự chấm bằng `eval.py grade`: **19/20 cho phần I (chất lượng model)** theo ngưỡng hiện tại; đây không phải tổng điểm bài và cần giảng viên xác nhận.

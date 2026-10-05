@@ -6,9 +6,9 @@ top-1 **0.9643 ± 0.0022**, mean ± std mẫu qua 3 seed.
 
 ## Notebook và kết quả
 
-- [Notebook có toàn bộ output — mở trên Colab](https://colab.research.google.com/github/Chika1357/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/2A202602640_nguyen_tuan_thanh/code/lab_day2_rtx6000_ada_executed.ipynb). Đây là lần chạy trên server; 8/8 ô code đã thực thi.
+- [Notebook có toàn bộ output — mở trên Colab](https://colab.research.google.com/github/Chika1357/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/2A202602640_nguyen_tuan_thanh/code/lab_day2.ipynb). Đây là lần chạy trên server; 8/8 ô code đã thực thi.
 - [Notebook chạy lại trên Colab](https://colab.research.google.com/github/Chika1357/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/2A202602640_nguyen_tuan_thanh/code/lab_day2_colab.ipynb). Chọn GPU và làm theo các ô cấu hình Drive.
-- [Notebook có output trong bài nộp](code/lab_day2_rtx6000_ada_executed.ipynb).
+- [Notebook có output trong bài nộp](code/lab_day2.ipynb).
 - [Báo cáo](report.md), [bảng kết quả](results.xlsx), [kiểm tra cuối](verification.md).
 
 Link Colab mở trực tiếp notebook từ GitHub; không cần quyền truy cập Drive của sinh viên.
@@ -16,6 +16,18 @@ Output notebook được giữ nguyên từ lần chạy RTX 6000 Ada. Báo cáo
 Kernel cần có môi trường GPU khi thực thi lại; xem output đã lưu không cần thực thi notebook.
 
 ## Cấu trúc bài nộp
+
+Thư mục bài nộp: `2A202602640_nguyen_tuan_thanh/`.
+Nếu nộp ZIP, dùng `2A202602640_nguyen_tuan_thanh.zip`, chứa thư mục này ở cấp đầu tiên.
+
+| File | Mục đích |
+|---|---|
+| `code/lab_day2.ipynb` | Notebook chính để chấm, có đầy đủ output của lần chạy hoàn thành |
+| `code/lab_day2_colab.ipynb` | Bản cấu hình để chạy lại trên Colab |
+| `code/lab_day2_server.ipynb` | Bản cấu hình để chạy lại trên GPU server |
+| `report.md` | Báo cáo thí nghiệm |
+| `results.xlsx` | Bảng kết quả |
+| `verification.md` | Kết quả kiểm tra các file và số liệu |
 
 `results.xlsx` có 7 sheet bắt buộc và sheet `Setup`; `report.md`; `curves/` (15 ảnh);
 `code/`; README với link notebook; `predictions/` (33 CSV). Giữ thêm `logs/`, `figures/`
@@ -34,7 +46,7 @@ python submissions/2A202602640_nguyen_tuan_thanh/code/test_workflow.py
 python -m unittest discover -s tests
 ```
 
-Mở `code/lab_day2_rtx6000_ada.ipynb` trong thư mục bài nộp bằng Jupyter,
+Mở `code/lab_day2_server.ipynb` trong thư mục bài nộp bằng Jupyter,
 chọn kernel đã đăng ký với virtualenv, rồi chạy các ô theo thứ tự.
 Notebook mặc định dùng `~/research777/output/rtx6000_epochs12_v1/`;
 để làm một lần chạy độc lập, đổi thư mục `OUTPUT` ở ô cấu hình. Bản có output giữ nguyên cấu hình của lần đã hoàn thành.
