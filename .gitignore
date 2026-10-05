@@ -12,3 +12,5 @@ __pycache__/
 .ipynb_checkpoints/
 runs/
 eval_out/
+# Local review copies, dependencies, and packaging/check scripts.
+/audit/
